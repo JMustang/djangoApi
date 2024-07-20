@@ -32,3 +32,21 @@ pip install django
 ```bash
 django-admin startproject nome_do_projeto
 ```
+
+- Para rodar o servidor do **Django** use o comando:
+
+```bash
+python manage.py runserver
+```
+
+- **manage.py**: É um utilitário de linha de comando que permite interagir com este projeto Django de várias maneiras.
+
+## Padrão de projeto
+
+- **Django** utiliza a arquitetura **MVT**, Models, Views e Templates.
+
+  1.Models: Models lida com o banco de dados, tudo que for relacionado ao banco de dados
+  o model é responsável. Criar tabela, modificar tabela, etc, ficara dentro do arquivo **models.py**.
+  2.Views: Views é onde vai ficar a logica da aplicação, funções em python que faz x, y, z, toda a logica da aplicação vai ficar dentro do arquivo **views.py**.
+  3.Templates: Templates, é a camada de interface com o usuário,
+  a parte "frontend" do **Django**.
