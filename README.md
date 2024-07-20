@@ -50,3 +50,19 @@ python manage.py runserver
   2.Views: Views é onde vai ficar a logica da aplicação, funções em python que faz x, y, z, toda a logica da aplicação vai ficar dentro do arquivo **views.py**.
   3.Templates: Templates, é a camada de interface com o usuário,
   a parte "frontend" do **Django**.
+
+## Criar as migrações
+
+- Para criar as migrações do banco de dados, execute o seguinte comando:
+
+```bash
+python manage.py makemigrations
+```
+
+## Aplicar as migrações
+
+Para aplicar as migrações do banco de dados, execute o seguinte comando:
+
+```bash
+python manage.py migrate
+```
