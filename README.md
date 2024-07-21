@@ -1,5 +1,7 @@
 # Django API
 
+---
+
 ## Funcionamento básico de Django
 
 - Criando ambiente virtual no **python**
@@ -39,7 +41,18 @@ django-admin startproject nome_do_projeto
 python manage.py runserver
 ```
 
+- O **Django** trabalha com a criação de **apps**, cada **app** ira resolver uma determinada tarefa,
+  no final, o conjunto desses **apps** sera a sua aplicação.
+
+- Para criar uma novo use o comando:
+
+```bash
+python manage.py startapp nome_do_app
+```
+
 - **manage.py**: É um utilitário de linha de comando que permite interagir com este projeto Django de várias maneiras.
+
+---
 
 ## Padrão de projeto
 
@@ -51,6 +64,8 @@ python manage.py runserver
   3.Templates: Templates, é a camada de interface com o usuário,
   a parte "frontend" do **Django**.
 
+---
+
 ## Criar as migrações
 
 - Para criar as migrações do banco de dados, execute o seguinte comando:
@@ -61,7 +76,7 @@ python manage.py makemigrations
 
 ## Aplicar as migrações
 
-Para aplicar as migrações do banco de dados, execute o seguinte comando:
+- Para aplicar as migrações do banco de dados, execute o seguinte comando:
 
 ```bash
 python manage.py migrate
